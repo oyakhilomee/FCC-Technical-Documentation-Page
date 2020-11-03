@@ -62,15 +62,10 @@ main {
   }
 }
 
-code {
-  background-color: #f7f7f7;
-  padding: 20px 20px 20px 20px;
-  border-radius: 6px;
-}
-
 .code {
   background-color: #f7f7f7;
   padding: 20px 20px 20px 20px;
+  border-radius: 6px;
 }
 
 header {
