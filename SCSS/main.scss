@@ -1,0 +1,11 @@
+$color-one: rgb(247, 247, 247);
+
+#navbar {
+  @media screen and (min-width: 768px) {
+  }
+}
+
+code {
+  background-color: $color-one;
+  padding: 20px 20px 20px 20px;
+}
