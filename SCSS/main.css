@@ -10,22 +10,22 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-header {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-code {
-  background-color: #f7f7f7;
-  padding: 20px 20px 20px 20px;
-  border-radius: 6px;
-}
-
 @media screen and (min-width: 768px) {
   .parent-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+.js-documentation {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .js-documentation {
+    margin-bottom: 20px;
   }
 }
 
@@ -50,7 +50,45 @@ code {
 
 main {
   width: 100%;
-  max-width: 70%;
+  max-width: 88%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+}
+
+code {
+  background-color: #f7f7f7;
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+}
+
+.code {
+  background-color: #f7f7f7;
+  padding: 20px 20px 20px 20px;
+}
+
+header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#global-variables,
+#data-types,
+#while-statement {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  #global-variables,
+  #data-types,
+  #while-statement {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

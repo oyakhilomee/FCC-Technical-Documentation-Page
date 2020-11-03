@@ -1,6 +1,12 @@
 $color-one: rgb(247, 247, 247);
 $color-two: rgb(153, 162, 162);
 
+// *,
+// html {
+//   margin: 0;
+//   padding: 0;
+// }
+
 a {
   text-decoration: none;
 }
@@ -14,25 +20,17 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-#navbar {
-  @media screen and (min-width: 768px) {
-  }
-}
-
-header {
-  font-weight: bold;
-  font-size: 20px;
-}
-
-code {
-  background-color: $color-one;
-  padding: 20px 20px 20px 20px;
-  border-radius: 6px;
-}
-
 .parent-body {
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+}
+
+.js-documentation {
+  text-align: center;
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -55,7 +53,38 @@ nav {
 
 main {
   width: 100%;
-  max-width: 70%;
+  max-width: 88%;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+  }
   //   background-color: red;
+}
+
+code {
+  background-color: $color-one;
+  padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+}
+
+.code {
+  background-color: $color-one;
+  //   margin-top: 30px;
+  padding: 20px 20px 20px 20px;
+}
+
+header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#global-variables,
+#data-types,
+#while-statement {
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
 }

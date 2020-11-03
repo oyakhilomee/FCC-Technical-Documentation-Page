@@ -9,9 +9,9 @@
   <body>
     <div class="parent-body">
       <nav id="navbar">
-        <header>JS Documentation</header>
-        <a href="introduction" class="nav-link">Introduction</a>
-        <a href="#what-you-should-already-know" class="nav-link"
+        <header class="js-documentation">JS Documentation</header>
+        <a href="#introduction" class="nav-link">Introduction</a>
+        <a href="#What-you-should-already-know" class="nav-link"
           >What You Should Already Know</a
         >
         <a href="#javascript-and-java" class="nav-link">Javascript and Java</a>
@@ -27,7 +27,7 @@
         <a href="#function-declarations" class="nav-link"
           >Function Declarations</a
         >
-        <a href="reference" class="nav-link">Reference</a>
+        <a href="#reference" class="nav-link">Reference</a>
       </nav>
       <main id="main-doc">
         <section class="main-section" id="Introduction">
@@ -194,10 +194,14 @@
             This behavior changes, when using the let declaration introduced in
             ECMAScript 2015.
           </p>
-          <code
-            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
-            not defined</code
-          >
+          <div class="code">
+            <code
+              >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+              not
+              <br />
+              defined</code
+            >
+          </div>
         </section>
         <section class="main-section" id="global-variables">
           <header>Global variables</header>
@@ -238,11 +242,15 @@
             You cannot declare a constant with the same name as a function or
             variable in the same scope. For example:
           </p>
-          <code
-            >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-            WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
-            //statements }</code
-          >
+          <div class="code">
+            <code>
+              THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+              WILL <br />
+              CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+              //statements <br />
+              }
+            </code>
+          </div>
           <p>
             However, object attributes are not protected, so the following
             statement is executed without problems.
@@ -380,7 +388,7 @@
             true, so the loop terminates.
           </p>
         </section>
-        <section class="main-section" id="functional-declarations">
+        <section class="main-section" id="function-declarations">
           <header>Function declarations</header>
           <!--Descriptive text of the topic of the section -->
           <p>
