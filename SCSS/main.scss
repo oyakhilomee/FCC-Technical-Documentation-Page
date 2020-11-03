@@ -1,8 +1,26 @@
 $color-one: rgb(247, 247, 247);
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 #navbar {
   @media screen and (min-width: 768px) {
   }
+}
+
+header {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 code {
