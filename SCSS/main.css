@@ -18,5 +18,39 @@ header {
 code {
   background-color: #f7f7f7;
   padding: 20px 20px 20px 20px;
+  border-radius: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .parent-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.nav-link {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-link {
+    display: block;
+    width: 280px;
+    border-top: 1px solid #99a2a2;
+    padding: 20px 0 20px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    border-right: 3px solid #99a2a2;
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
