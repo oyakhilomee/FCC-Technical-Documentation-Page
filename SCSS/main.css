@@ -1,9 +1,17 @@
 a {
   text-decoration: none;
+  color: #5f5f5f;
 }
 
 a:hover {
   text-decoration: none;
+  color: #5f5f5f;
+}
+
+@media screen and (min-width: 768px) {
+  a:hover {
+    border-left: 9px solid #037ef3;
+  }
 }
 
 body {
@@ -21,6 +29,7 @@ body {
 .js-documentation {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -29,16 +38,29 @@ body {
   }
 }
 
+#navbar {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  #navbar {
+    width: 25%;
+  }
+}
+
 .nav-link {
   display: block;
+  padding: 10px 0 10px 30px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .nav-link {
     display: block;
-    width: 280px;
     border-top: 1px solid #99a2a2;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 
@@ -50,14 +72,13 @@ body {
 
 main {
   width: 100%;
-  max-width: 88%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   main {
-    width: 100%;
-    max-width: 75%;
+    width: 70%;
     margin: 0 auto;
   }
 }
@@ -70,7 +91,7 @@ main {
 
 header {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #global-variables,

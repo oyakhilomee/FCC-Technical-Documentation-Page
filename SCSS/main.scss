@@ -1,5 +1,7 @@
 $color-one: rgb(247, 247, 247);
 $color-two: rgb(153, 162, 162);
+$color-three: rgb(95, 95, 95);
+$color-four: #037ef3;
 
 // *,
 // html {
@@ -9,10 +11,15 @@ $color-two: rgb(153, 162, 162);
 
 a {
   text-decoration: none;
+  color: $color-three;
 }
 
 a:hover {
   text-decoration: none;
+  color: $color-three;
+  @media screen and (min-width: 768px) {
+    border-left: 9px solid $color-four;
+  }
 }
 
 body {
@@ -29,19 +36,28 @@ body {
 .js-documentation {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
   }
 }
 
+#navbar {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 25%;
+  }
+}
+
 .nav-link {
   display: block;
+  padding: 10px 0 10px 30px;
+  text-align: center;
   @media screen and (min-width: 768px) {
     display: block;
-    width: 280px;
-    // margin: 20px 0 0 0;
     border-top: 1px solid $color-two;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 20px;
+    transition: all 0.3s;
   }
 }
 
@@ -53,11 +69,11 @@ nav {
 
 main {
   width: 100%;
-  max-width: 88%;
+  max-width: 90%;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    width: 100%;
-    max-width: 75%;
+    width: 70%;
+    // max-width: 75%;
     margin: 0 auto;
   }
   //   background-color: red;
@@ -71,7 +87,7 @@ main {
 
 header {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #global-variables,
