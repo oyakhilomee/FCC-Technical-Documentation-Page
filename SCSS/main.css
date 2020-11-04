@@ -38,6 +38,13 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .js-documentation {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
 #navbar {
   width: 100%;
 }
@@ -57,8 +64,9 @@ body {
 @media screen and (min-width: 768px) {
   .nav-link {
     display: block;
+    text-align: center;
     border-top: 1px solid #99a2a2;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
   }
